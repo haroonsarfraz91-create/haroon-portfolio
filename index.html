@@ -202,6 +202,20 @@
   }
   .skill-cols li:first-child{border-top:none;}
 
+  /* ---------- TRAINING GALLERY ---------- */
+  .training-grid{display:grid; grid-template-columns:repeat(2,1fr); gap:32px;}
+  @media(max-width:720px){.training-grid{grid-template-columns:1fr;}}
+  .training-card{border:1px solid var(--rule); background:var(--bg-panel); transition:transform .25s ease, border-color .25s ease;}
+  .training-card:hover{transform:translateY(-3px); border-color:var(--gold-soft);}
+  .training-card img{width:100%; height:230px; object-fit:cover; display:block; border-bottom:1px solid var(--rule);}
+  .training-card .tc-body{padding:22px 24px;}
+  .training-card .tc-org{
+    font-family:'IBM Plex Mono', monospace; font-size:11px; letter-spacing:0.08em;
+    text-transform:uppercase; color:var(--jade); margin-bottom:8px;
+  }
+  .training-card h4{margin:0 0 8px; font-size:18px; font-weight:500;}
+  .training-card p{margin:0; color:var(--ink-dim); font-size:14.5px;}
+
   /* ---------- EDUCATION ---------- */
   .edu-item{display:flex; justify-content:space-between; gap:20px; padding:20px 0; border-top:1px solid var(--rule);}
   .edu-item:first-child{border-top:none;}
@@ -347,6 +361,7 @@
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#skills">Skills</a>
+      <a href="#training">Training</a>
       <a href="#education">Education</a>
       <a href="#contact">Contact</a>
     </nav>
@@ -536,9 +551,54 @@
   </div>
 </section>
 
+<section id="training">
+  <div class="wrap">
+    <div class="sec-head"><span class="sec-no">04</span><h2>Training &amp; Development</h2></div>
+    <div class="training-grid reveal-stagger">
+
+      <div class="training-card">
+        <img src="images/training/sahara-aml-1.jpg" alt="Delivering AML compliance training at The Sahara Official">
+        <div class="tc-body">
+          <div class="tc-org">The Sahara Official</div>
+          <h4>AML / KYC Compliance Training</h4>
+          <p>Led company-wide AML and KYC training sessions as Lead Trainer, building the compliance foundation across CS, Telesales, Collections, and Verification teams.</p>
+        </div>
+      </div>
+
+      <div class="training-card">
+        <img src="images/training/seedcred-kyc-training.jpg" alt="Delivering identity verification training at SeedCred">
+        <div class="tc-body">
+          <div class="tc-org">SeedCred (Barwaqt)</div>
+          <h4>Identity Verification &amp; Fraud Screening</h4>
+          <p>Trained verification staff on document authentication and KYC screening standards, strengthening fraud-detection capability on the floor.</p>
+        </div>
+      </div>
+
+      <div class="training-card">
+        <img src="images/training/finvolution-daira-training.jpg" alt="Presenting reporting and MIS training at FinVolution Daira">
+        <div class="tc-body">
+          <div class="tc-org">FinVolution (Daira)</div>
+          <h4>Reporting &amp; MIS Training</h4>
+          <p>Guided teams through operational reporting standards and KPI tracking to support quality management and leadership visibility.</p>
+        </div>
+      </div>
+
+      <div class="training-card">
+        <img src="images/training/finvolution-daira-meeting.jpg" alt="Team training session at FinVolution Daira">
+        <div class="tc-body">
+          <div class="tc-org">FinVolution (Daira)</div>
+          <h4>Team Development Session</h4>
+          <p>Ran structured team sessions covering process alignment and performance standards across the floor.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 <section id="education">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-no">04</span><h2>Education</h2></div>
+    <div class="sec-head"><span class="sec-no">05</span><h2>Education</h2></div>
     <div class="reveal-stagger">
     <div class="edu-item">
       <div>
@@ -567,7 +627,7 @@
 
 <section id="contact">
   <div class="wrap">
-    <div class="sec-head"><span class="sec-no">05</span><h2>Contact</h2></div>
+    <div class="sec-head"><span class="sec-no">06</span><h2>Contact</h2></div>
     <div class="contact-box reveal">
       <div>
         <h2>Let's talk operations.</h2>
