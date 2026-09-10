@@ -217,12 +217,26 @@
   }
   .role-top{display:flex; gap:16px; align-items:flex-start;}
   .role-logo{
-    flex:0 0 auto; width:44px; height:44px; border:1px solid var(--rule); background:var(--bg-panel);
-    display:flex; align-items:center; justify-content:center;
-    font-family:'IBM Plex Mono', monospace; font-size:12.5px; font-weight:600; color:var(--gold);
-    letter-spacing:0.02em; transition:transform .3s cubic-bezier(.34,1.56,.64,1), border-color .3s ease, background .3s ease;
-  }
-  .role:hover .role-logo{transform:rotate(-6deg) scale(1.08); border-color:var(--gold-soft); background:var(--bg-panel-2);}
+  flex:0 0 auto;
+  width:44px;
+  height:44px;
+  border:1px solid var(--rule);
+  background:#fff;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+  padding:5px;
+  transition:transform .3s cubic-bezier(.34,1.56,.64,1), border-color .3s ease, background .3s ease;
+}
+
+.role-logo img{
+  width:100%;
+  height:100%;
+  object-fit:contain;
+  display:block;
+}
+  .role:hover .role-logo{transform:rotate(-6deg) scale(1.08); border-color:var(--gold-soft); background:#fff;}
   .role h3{font-size:21px; font-weight:500; margin:0 0 3px;}
   .role .org{color:var(--ink-dim); font-size:14.5px; margin-bottom:14px;}
   .role .org span{color:var(--gold-soft);}
@@ -534,10 +548,10 @@
       <div class="role current">
         <div class="role-meta"><span class="status">Current</span><span>Aug 2026 — Present</span></div>
         <div class="role-top">
-          <div class="role-logo">CBJ</div>
+          <div class="role-logo">   <img src="fanguo-technology.png" alt="Fanguo Technology logo"> </div>
           <div>
             <h3>Floor Supervisor</h3>
-            <div class="org">成都博问金服科技有限公司 (Chengdu Bowen Jinfu Technology Co., Ltd.) · <span>Islamabad, Pakistan</span></div>
+            <div class="org">深圳凡夫俗子科技有限公司 (Fanguo Technology) · <span>Islamabad, Pakistan</span></div>
           </div>
         </div>
         <ul>
